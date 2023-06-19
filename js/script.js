@@ -1,5 +1,5 @@
-alert('Hello world');
-// Note: the content of favoriteFood makes no real sense it is a test
-var favoriteFood = 99;
-var name = 'favoriteFood';
-console.log(favoriteFood);
+let pokemonList=[
+    {name: "bulbasaur", height: "7", type: "grass"},
+    {name: "charizard", height: "6", type: "fire"},
+    {name: "squirtle", height: "5", type: "water"}
+];
