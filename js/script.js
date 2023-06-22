@@ -6,11 +6,14 @@
     ];
     
     for (let i=0; i < pokemonList.length; i++)
-    { console.log(pokemonList[i].name + " (height: " + pokemonList[i].height +")")
+     
+// second loop in order to identify the big pokemon higher than `6`
+    if (pokemonList[i].height > 6)
+    { console.log(pokemonList[i].name + " (height: " + pokemonList[i].height +")" + " Wow this is really big")
+}
+    else 
+{  console.log(pokemonList[i].name + " (height: " + pokemonList[i].height +")")
 }
 
-// second loop in order to identify the big pokemon higher than `6`
-    for (let i=0; i < pokemonList.length; i++) if (pokemonList[i].height > 6)
-    { console.log(pokemonList[i].name + " (height: " + pokemonList[i].height +")" + "Wow this is really big")
-}
-     
+
+    
