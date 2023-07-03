@@ -20,7 +20,7 @@
     pokemonList.forEach(function(pokemon) { 
         
         
-            console.log(pokemonList.name + pokemonList.height + pokemonList.types);
+            console.log(pokemon.name + pokemon.height + pokemon.types);
         });  
 
     
