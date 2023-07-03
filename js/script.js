@@ -17,15 +17,15 @@
     }
     ];
     
-    for (let i=0; i < pokemonList.length; i++)
+    pokemonList.forEach(function(pokemon) { 
+        
+        
+            console.log(pokemonList.name + pokemonList.height + pokemonList.types);
+        });  
+
+    
      
-// second loop in order to identify the big pokemon higher than `6`
-    if (pokemonList[i].height > 6)
-    {document.write(pokemonList[i].name + " (height: " + pokemonList[i].height +")" + " Wow this is really big")
-    }   
-    else 
-    {document.write(pokemonList[i].name + " (height: " + pokemonList[i].height +")")
-    }
+
 
 
     
