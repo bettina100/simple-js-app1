@@ -1,4 +1,7 @@
     
+    let pokemonRepository = (function () {
+       
+    
     let pokemonList=[
     {   
         name: "bulbasaur",
@@ -24,8 +27,22 @@
         });  
 
     
-     
+        function add(pokemon) {
+            pokemonList.push(pokemon);
+          }
+        
+          function getAll() {
+            return pokemonList;
+          }
+        
+          return {
+            add: add,
+            getAll: getAll
+          };
+        })();  
 
 
-
+        console.log(pokemonRepository.getAll()); // []
+        pokemonRepository.add({ name: 'bulbasaur' });
+        console.log(pokemonRepository.getAll()); // [ { name: 'bulbasaur' } ]
     
