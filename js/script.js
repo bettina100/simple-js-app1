@@ -19,29 +19,30 @@ let pokemonRepository = (function () {
     }
     ];
         
-    function add(pokemon) {
+function add(pokemon) {
     pokemonList.push(pokemon);
 }      
         
-          function getAll() {
-            return pokemonList;
-          }
+function getAll() {
+    return pokemonList;
+    }
         
-          return {
-            add: add,
-            getAll: getAll
-          };
-        })();  
+    return {
+    add: add,
+    getAll: getAll
+    };
+})();  
 
-        pokemonRepository.getAll().forEach(function(pokemon) { 
-        if (pokemon.height > 6)
-            {document.write("<p>" + pokemon.name + " (height: " + pokemon.height +")" + " Wow this is really big" + "<p/>");
+    pokemonRepository.getAll().forEach(function(pokemon) { 
+    if (pokemon.height > 6){
+        document.write("<p>" + pokemon.name + " (height: " + pokemon.height +")" + " Wow this is really big" + "<p/>");
         }
-        else
-        {document.write("<p>" + pokemon.name + " (height: " + pokemon.height +")" + "<p/>");
+    else {
+        document.write("<p>" + pokemon.name + " (height: " + pokemon.height +")" + "<p/>");
         } 
 });
-        console.log(pokemonRepository.getAll()); // []
-        pokemonRepository.add({ name: 'bulbasaur' });
-        console.log(pokemonRepository.getAll()); // [ { name: 'bulbasaur' } ]
+        
+console.log(pokemonRepository.getAll()); // []
+pokemonRepository.add({ name: 'bulbasaur' });
+console.log(pokemonRepository.getAll()); // [ { name: 'bulbasaur' } ]
     
