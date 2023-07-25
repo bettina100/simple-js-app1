@@ -35,6 +35,12 @@ function addListItem(pokemon){
         listpokemon.appendChild(button);
         pokemonList.appendChild(listpokemon);
 }
+
+let button = document.querySelector('button');
+button.addEventListener('click', function (event) {
+    console.log(event);
+});
+
 return {
     add: add,
     getAll: getAll,
